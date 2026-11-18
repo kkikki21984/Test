@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         "อ่านข้อความแล้วหาคำที่ซ่อนอยู่:\n“ดาวเหนือส่องทางในคืนมืด”\nคำใบ้: มองหาสิ่งที่ใช้บอกทิศ",
         "รหัสสุดท้าย: 20-8-5-32-11-5-25\nคำใบ้: A=1 ถึง Z=26 และ 32 คือเว้นวรรค"
     };
-    private final String[] answers = {"CAESAR", "DAVINCI", "รหัสดก", "เหนือ", "THE KEY"};
+    private final String[] answers = {"CAESAR", "DAVINCI", "รหกด", "เหนือ", "THE KEY"};
     private final String[] hints = {
         "ตัวอักษร C ถอยหลัง 3 ตำแหน่งจะเป็น Z",
         "แปลง 1=A, 2=B ไปเรื่อย ๆ",
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
         TextView subtitle = text("ปริศนาลับแห่งต้นฉบับโบราณ", 16, Color.rgb(194,177,145), false);
         content.addView(subtitle, space(42));
 
-        progress = text("", 14, Color.rgb(205,165,83), true);
+        progress = text("ด่าน " + (level + 1) + " / 5", 14, Color.rgb(205,165,83), true);
         content.addView(progress, space(42));
 
         LinearLayout card = new LinearLayout(this);
